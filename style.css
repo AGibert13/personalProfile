@@ -47,7 +47,7 @@ img{
 	width: 100%;
 }
 
-@media only screen and (min-device-width: 641px) and (max-device-width: 1024px) and (orientation: landscape){
+@media only screen and (min-device-width: 320px) and (max-device-width: 1024px){
 	html{
 		background: url(mobileBackground.jpg);
 		background-size: 100% 100%;
@@ -61,7 +61,8 @@ img{
 		font-size: 70%;
 	}
 }
-@media only screen and (max-width: 640px){
+
+@media only screen and (max-width: 550px){
 	html{
 		background: url(mobileBackground.jpg);
 		background-size: 100% 100%;
