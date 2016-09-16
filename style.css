@@ -1,0 +1,63 @@
+html{
+	background: url(background.jpg);
+	background-size: 100% 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+}
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Carter One', cursive;
+	color: white;
+	font-size: .75rem;
+}
+header{
+	background:url(header.jpg);
+	background-size: 100% 100%;
+	height: 100%;
+	width: 100%;
+	font-size: .75em;
+}
+h1{
+	margin:auto 0;
+	width: 45%;
+	padding: 10px;
+	display: inline-block;
+}
+a{
+	color: white;
+	text-decoration: none;
+	padding-left: 5px;
+}
+a:hover{
+	color: darkred;
+	text-decoration: underline;
+}
+nav{
+	display: inline-block;
+	position: relative;
+	font-size: 1.25em;
+	float: right;
+	top: 15px;
+	text-align: right;
+	width: 45%;
+}
+img{
+	text-align: center;
+	width: 100%;
+}
+
+@media only screen and (max-width: 540px){
+	html{
+		background: url(mobileBackground.jpg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat; 
+	}
+	header{
+		background:url(mobileHeader.jpg);
+		background-size: 100%;
+	}
+	body{
+		font-size: 70%;
+	}
+}
