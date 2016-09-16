@@ -47,7 +47,21 @@ img{
 	width: 100%;
 }
 
-@media only screen and (max-width: 540px){
+@media only screen and (max-width: 1030px) and (orientation: landscape){
+	html{
+		background: url(mobileBackground.jpg);
+		background-size: 100% 100%;
+		background-repeat: no-repeat; 
+	}
+	header{
+		background:url(mobileHeader.jpg);
+		background-size: 100%;
+	}
+	body{
+		font-size: 70%;
+	}
+}
+@media only screen and (max-width: 770px) and (orientation: portrait){
 	html{
 		background: url(mobileBackground.jpg);
 		background-size: 100% 100%;
