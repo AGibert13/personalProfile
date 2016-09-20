@@ -4,40 +4,46 @@
 	<title>Personal Profile</title>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width; initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href="https://fonts.googleapis.com/css?family=Carter+One" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css" id="theme">
+	<link href="https://fonts.googleapis.com/css?family=Cantarell:700i|Carter+One" rel="stylesheet">
 </head>
 <body>
 	<header>
 		<h2>Adrien Gibert's Profile</h2>
+		<br>
+		<text>Change Theme</text>
+		<label class="switch">
+			<input type="checkbox" id="slide">
+			<div class="slider round"></div>
+		</label>
 		<nav id="headerNav">
-				<li id ="aboutLink">About Me</li> |
-				<li id ="codeLink">My Coding Experience</li> |
+				<li id ="aboutLink">About Me</li>
+				<li id ="codeLink">My Coding Experience</li>
 				<li id="projectLink">Projects</li>
 		</nav>
+		<p id="welcome" style="display: none;">Welcome</p>
 		<img src="banner2.jpg">
 	</header>
 	<section id="intro">
-	<p></p>
-		<nav id="homeNav">
-			<button id="aboutButton">About Me</button>
-			<button id="codeButton">My Coding Experience</button>
-			<button id="projectButton">Projects</button>
-		</nav>
 	</section>
 	<section id="about">
+	<p class="head" id="aboutHead" style="display: none;">About Me</p>
 		<p>
 			Hi, my name is Adrien Gibert. I am 20 years old and am currently an IT intern at Carter's Corporate Headquarters. 
 		</p>
 	</section>
-	<section id="code">
-
+	<section id="code" style="display: none;">
+	<p class="head" id ="codeHead">My Coding Experience</p>
 	</section>
-	<section id="projects">
-		
+	<section id="projects" style="display: none;">
+		<p class="head" id="projectHead">Projects</p>
 	</section>
 	<footer>
-		
+	<nav id="homeNav">
+			<input type="button" class="button" id="aboutButton" value="About Me">
+			<input type="button" class="button" id="codeButton" value="My Coding Experience">
+			<input type="button" class="button" id="projectButton" value="Projects">
+		</nav>
 	</footer>
 	<script
         	src="https://code.jquery.com/jquery-1.12.3.min.js"
