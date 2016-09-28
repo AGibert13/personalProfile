@@ -24,4 +24,13 @@ $(document).ready(function(){
 				$(inId).fadeIn(2000);
 		});
 	}
+	$('.website').click(function(){
+		var source = $(this).attr('data-link');
+		$('#websiteDisplay').attr('src',source);
+		$('#frame').show();
+	})
+	$('#close').click(function(){
+		$('#frame').hide();
+		$('#websiteDisplay').removeAttr('src');
+	})
 });

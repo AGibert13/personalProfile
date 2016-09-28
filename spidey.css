@@ -51,7 +51,7 @@ li:hover{
 #about{
 	display: none;
 }
-img{
+#banner{
 	text-align: center;
 	width: 100%;
 	display: block;
@@ -86,6 +86,52 @@ p{
 	position: fixed;
 	top: 35%;
 	left: 0;
+}
+#projectHead{
+	background: none;
+	text-align: center;
+	margin: 0 auto;
+	width: 100%;
+	position: absolute;
+	top: 20%;
+	left: 0;
+}
+#projects{
+	top: 25%;
+	left: 20%;
+}
+.website{
+	display: inline-block;
+	width: 30%;
+	padding: 20px;
+}
+.websiteImg{
+	height: 240px;
+	width: 400px;
+}
+.website:hover{
+	background-color: darkgrey;
+}
+iframe{
+	height: 90%;
+	width: 90%;
+	position: absolute;
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	border: rgba(0,0,0,.5) solid 96px;
+	border-bottom: none;
+}
+
+#close{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 60px;
+	width: 50px;
+}
+#close:hover{
+	cursor:pointer;
 }
 .switch {
   position: relative;
@@ -160,9 +206,6 @@ input:checked + .slider:before {
 	}
 	.button{
 		font-size: 16px;
-		height: 50px;
-		top: 10px;
-		margin-left: 0;
 	}
 	.switch {
 	  position: relative;
@@ -173,7 +216,6 @@ input:checked + .slider:before {
 	.slider:before {
 	  height: 10px;
 	  width: 10px;
-	  top: 0.1px
 	}
 	input:checked + .slider:before {
 	  -webkit-transform: translateX(13px);
@@ -201,7 +243,8 @@ input:checked + .slider:before {
 		font-size: .75rem;
 	}
 	.button{
-		font-size: .75rem;
+		font-size: 16px;
+		height: 100px;
 	}
 	.switch {
 	  position: relative;
@@ -212,7 +255,7 @@ input:checked + .slider:before {
 	.slider:before {
 	  height: 10px;
 	  width: 10px;
-	  top: 0.25px
+	  top: .1px;
 	}
 	input:checked + .slider:before {
 	  -webkit-transform: translateX(13px);

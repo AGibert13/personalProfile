@@ -22,25 +22,30 @@
 				<li id="projectLink">Projects</li>
 		</nav>
 		<p id="welcome" style="display: none;">Welcome</p>
-		<img src="banner2.jpg">
+		<img id="banner" src="banner2.jpg">
 	</header>
 	<section id="intro">
 	</section>
-	<section id="about">
+	<section id="about" class ="pages" >
 	<p class="head" id="aboutHead" style="display: none;">About Me</p>
 		<p>
 			Hi, my name is Adrien Gibert. I am 20 years old and am currently an IT intern at Carter's Corporate Headquarters. 
 		</p>
 	</section>
-	<section id="code" style="display: none;">
+	<section id="code" class ="pages" style="display: none;">
 	<p class="head" id ="codeHead">My Coding Experience</p>
 	</section>
-	<section id="projects" style="display: none;">
+	<section class ="pages" id="projects" style="display: none;">
 		<p class="head" id="projectHead">Projects</p>
-		<section></section>
-		<section></section>
-		<section></section>
+		<div class="website" data-link="https://agibert13.github.io/YearUpWeb/Final%20Project/index.html" >
+		<img class="websiteImg" src="shoes.jpg" ><h2>Astro Shoes</h2></div>
+		<div class="website" data-link="https://agibert13.github.io/ProjectYourself/about.html"><img class="websiteImg" src="project.jpg"><h2>Project Yourself</h2></div>
+		<div class="website" data-link="https://agibert13.github.io/algorithmPerformance/sort.html"><img class="websiteImg" src="sort.jpg"><h2>Sort</h2></div>
 	</section>
+	<div id="frame" style="display:none;">
+		<iframe id="websiteDisplay" frameborder="0"></iframe>
+		<img id="close" src="close.png">
+	</div>
 	<footer>
 	<nav id="homeNav">
 			<input type="button" class="button" id="aboutButton" value="About Me">

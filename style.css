@@ -41,10 +41,10 @@ li:hover{
 	right: 0px;
 	text-align: right;
 	width: 50%;
-	position: fixed;
+	position: absolute;
 }
 #homeNav{
-	position: fixed;
+	position: absolute;
 	font-size: 1em;
 	width: 100%;
 	bottom: 10%;
@@ -52,7 +52,7 @@ li:hover{
 #about{
 	display: none;
 }
-img{
+#banner{
 	text-align: center;
 	width: 100%;
 	padding: 0px;
@@ -65,7 +65,7 @@ p{
 	width: 50%;
 	top: 25%;
 	left: 40%;
-	position: fixed;
+	position: absolute;
 }
 .button{
 	background-color: rgba(149, 0, 0, .5) ;
@@ -84,9 +84,8 @@ p{
 #welcome{
 	background: none;
 	text-align: center;
-	margin: 0 auto;
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	top: 40%;
 	left: 0;
 }
@@ -95,7 +94,7 @@ p{
 	text-align: center;
 	margin: 0 auto;
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	top: 20%;
 	left: 0;
 }
@@ -104,7 +103,7 @@ p{
 	text-align: center;
 	margin: 0 auto;
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	top: 20%;
 	left: 0;
 }
@@ -113,9 +112,48 @@ p{
 	text-align: center;
 	margin: 0 auto;
 	width: 100%;
-	position: fixed;
+	position: absolute;
 	top: 20%;
 	left: 0;
+}
+#projects{
+	top: 25%;
+	left: 20%;
+}
+.website{
+	display: inline-block;
+	width: 33%;
+	padding-top: 20px;
+	margin-top: 100px;
+	text-align: center;
+}
+.websiteImg{
+	height: 240px;
+	width: 400px;
+}
+.website:hover{
+	background-color: darkgrey;
+}
+iframe{
+	height: 90%;
+	width: 90%;
+	position: absolute;
+	margin: 0 auto;
+	top: 0;
+	left: 0;
+	border: rgba(0,0,0,.5) solid 96px;
+	border-bottom: none;
+}
+
+#close{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 60px;
+	width: 50px;
+}
+#close:hover{
+	cursor:pointer;
 }
 .switch {
   position: relative;
