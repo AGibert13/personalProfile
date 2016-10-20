@@ -16,11 +16,13 @@
 			<input type="checkbox" id="slide">
 			<div class="slider round"></div>
 		</label>
-		<nav id="headerNav">
+		<nav id="headerNav" style="display:none;">
+				<li id="closeNav">×</li>
 				<li id ="aboutLink">About Me</li>
 				<li id ="codeLink">My Coding Experience</li>
 				<li id="projectLink">Projects</li>
 		</nav>
+		<span id="hambugerMenu" >☰</span>
 		<p id="welcome" style="display: none;">Welcome</p>
 		<img id="banner" src="banner2.jpg">
 	</header>
@@ -37,14 +39,27 @@
 	</section>
 	<section class ="pages" id="projects" style="display: none;">
 		<p class="head" id="projectHead">Projects</p>
-		<div class="website" data-link="https://agibert13.github.io/MovieWebsite/fresh_tomatoes.html" >
-		<img class="websiteImg" src="movie.jpg" ><h2>Favorite Movies</h2></div>
-		<div class="website" data-link="https://agibert13.github.io/ProjectYourself/about.html"><img class="websiteImg" src="project.jpg"><h2>Project Yourself</h2></div>
-		<div class="website" data-link="https://agibert13.github.io/algorithmPerformance/sort.html"><img class="websiteImg" src="sort.jpg"><h2>Sort</h2></div>
+		<div id="websiteList">
+			<div class="website" data-link="https://agibert13.github.io/MovieWebsite/fresh_tomatoes.html" >
+				<img class="websiteImg" src="movie.jpg" >
+				<h2>Favorite Movies</h2>
+			</div>
+
+			<div class="website" data-link="https://agibert13.github.io/ProjectYourself/about.html">
+				<img class="websiteImg" src="project.jpg">
+				<h2>Project Yourself</h2>
+			</div>
+
+			<div class="website" data-link="https://agibert13.github.io/algorithmPerformance/sort.html">
+				<img class="websiteImg" src="sort.jpg">
+				<h2>Sort</h2>
+			</div>
+		</div>
 	</section>
 	<div id="frame" style="display:none;">
+	<div id="frameBackground"></div>
 		<iframe id="websiteDisplay" frameborder="0"></iframe>
-		<img id="close" src="close.png">
+		<img id="closeFrame" src="close.png">
 	</div>
 	<footer>
 	<nav id="homeNav">
