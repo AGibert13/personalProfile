@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	selectView()
 	$('#slide').click(function(){
 			if ($(this).is(':checked')){
 				$('#theme').attr('href','spidey.css')
@@ -23,11 +24,13 @@ $(document).ready(function(){
 			$('#frame').hide();
 			$('#websiteDisplay').removeAttr('src');
 		})
-	function switchView(){
+	function selectView(){
 		if (screen.height < 801) {
 			if ($('#headerNav')) {
 				$('#headerNav').attr({'id':'mobileNav'})
-				$('#welcome').css({'display':'none'})
+				if ($('#homeNav')) {
+					$('#welcome').css({'display':'none'})
+				}
 			}
 			$('#aboutButton, #aboutLink').click(function(){
 				fade('#homeNav, #code, #projects','#aboutHead, #about, #hambugerMenu')	
@@ -63,7 +66,15 @@ $(document).ready(function(){
 			})
 		}
 	}
+
 	$(window).resize(function(){
-		switchView();
+		selectView();
+	})
+
+	$('#suprise').click(function(){
+		$('#secretPic').delay(100).css({'display': 'none'})
+		$('#secretPic').delay(100).css({'right': '-10%'})
+		$('#secretPic').css({'display': 'block'})
+		$('#secretPic').animate({right: "+100%"}, 5000)
 	})
 });
